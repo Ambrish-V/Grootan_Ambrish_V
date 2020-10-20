@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("grootan-icon.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-position: center;
+                background-size: 200px 300px;
+                background-color: black;
+                height: 100%;
+            }
+            img.loginimage{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: calc(50% -50px);
+            }
+            div.loginform{
+                text-align: left;
+                font-size: 20px;
+                font-family: sans-serif;
+                position: absolute;
+                color: black;
+                padding: 50px;
+                margin: 15px;
+                background-color: rgba(255,255,255,1.0);
+                box-sizing: border-box;
+            }
+            .loginform  input[type="submit"]
+            {
+                width: 100%;
+                margin-bottom: 10px;
+                border: none;
+                outline: none;
+                height: 40px;
+                background: #1c8adb;
+                color: #fff;
+                font-size: 18px;
+                border-radius: 90px;
+            }
+            .loginform  input[type="submit"]:hover
+            {
+                cursor: pointer;
+                background: #39dc79;
+                color: #000;
+            }
+            .loginform a{
+                font-size: 16px;
+                position: left;
+                color: black;
+            }
+            .loginform a:hover{
+                color: #39dc79
+            }
+            .form .Reg-form{
+                
+            }
+            .form .message{
+                margin: 15px 0 0;
+                color: aliceblue;
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="loginform">
+            <div class="form">
+        <form class="Reg-form" action="registerdb" name="signuppage" method="get">
+            <label for="studentname">Name       </label>
+            <input type="text" id="studentname" name="Sname" placeholder="Enter name" onkeydown="highlight(this)" onkeyup="white(this)" required><br><br>
+            Age  <input type="text" name="age" placeholder="Enter age" onkeydown="highlight(this)" onkeyup="white(this)" required><br><br>
+               Country <select  name="Country" required>
+                     <option value="Afganistan">Afganistan</option>
+                     <option value="Austria">Austria</option>
+                     <option value="Australia">Australia</option>
+                     <option value="Bangladesh">Bangladesh</option>
+                     <option value="Brazil">Brazil</option>
+                     <option value="Canada">Canada</option>
+                     <option value="China">China</option>
+                     <option value="Finland">Finland</option>
+                     <option value="India">India</option>
+                     <option value="Iran">Iran</option>
+                     <option value="Iraq">Iraq</option>
+                     <option value="Japan">Japan</option>
+                     <option value="Kazakhstan">Kazakhstan</option>
+                     <option value="Lebanon">Lebanon</option>
+                     <option value="Myanmer">Myanmer</option>
+                     <option value="Netherland">Netherland</option>
+                     <option value="Norway">Norway</option>
+                     <option value="Pakistan">Pakistan</option>
+                     <option value="Portugal">Portugal</option>
+                     <option value="Russia">Russia</option>
+                     <option value="Switzerland">Switzerland</option>
+                     <option value="Spain">Spain</option>
+                     <option value="South Africa">South Africa</option>
+                     <option value="South Korea">South Korea</option>
+                     <option value="Sri Lanka">Sri Lanka</option>
+                     <option value="Thailand">Thailand</option>
+                     <option value="Turkey">Turkey</option>
+                     <option value="United Kingdom">United Kingdom</option>
+                     <option value="USA">USA</option>
+                     <option value="Uzbegiztan">Uzbegistan</option>
+                     <option value="Zimbabwe">Zimbabwe</option>
+               </select><br><br>
+               DOB <input type="date" name="dob" placeholder="dd/mm/yyyy"required><br><br>
+               Gender <input type="radio" name="gender" value="Male" required> <small>Male</small>
+               <input type="radio" name="gender" value="Female" required> <small>Female</small><br><br>
+               Languages Known <select  name="languages" required>
+                     <option value="C">C</option>
+                     <option value="C++">C++</option>
+                     <option value="Java">Java</option>
+                     <option value="JavaScript">JavaScript</option>
+                     <option value="PHP">PHP</option>
+                     <option value="Python">Python</option>
+                     <option value="MySQL">MySQL</option>
+                     <option value="SQLserver">SQLserver</option>
+                     <option value="MongoDB">MongoDB</option>
+                     <option value="Ruby">Ruby</option>
+                     <option value="Scala">Scala</option>
+               </select><br><br>
+               Favourite color <input type="color" name="color" value="#ff0000"><br><br>
+               Upload photograph <input type="file" id="img" name="img" accept="image/png"><br><br>
+               Email <input type="email" name="email" placeholder="Email Id" onkeydown="highlight(this)" onkeyup="white(this)" required ><br><br>
+               Website Address <input type="text" placeholder="website" name="webadd"><br><br>
+               Mobile <input type="tel" name="phone" placeholder="[0123456789]" onkeydown="highlight(this)" onkeyup="white(this)" required><br><br>   
+               CGPA <input type="range" id="vol" name="cgpa" min="0" max="10"><br>
+               <input type="submit" value="Register">
+            </form>
+            </div>
+        </div>
+        <script>
+            function highlight(x) {
+            x.style.background = "dodgerblue";
+        }
+            function white(x){
+            x.style.background= "white";            
+            }
+        </script>
+    </body>
+</html>
